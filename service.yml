@@ -1,0 +1,9 @@
+---
+ - name: service module
+   hosts: all
+   tasks:
+     - name: ensure apache service started
+       service:
+         name: apache
+         state: started
+
