@@ -1,0 +1,12 @@
+---
+ - name: copy script.sh to remote servers
+   hosts: all
+   gather_facts: false
+   tasks:
+     - name: copy script.sh file
+       copy:
+         src: /home/user/script.sh
+         dest: /tmp
+         owner: root
+         group: root
+
